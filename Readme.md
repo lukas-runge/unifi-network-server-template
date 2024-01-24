@@ -28,9 +28,9 @@ UNA_GID=<your-group-id>
 docker compose up -d
 ```
 
-### 4. finish setup of controller at https://localhost:8443
+### 4. finish setup of UniFi Network Server at [https://\<controller-ip>:8443](https://localhost:8443)
 
-### 5. access devices via ssh
+### 5. access UniFi devices via ssh
 > [!TIP]
 > Prior to setup/adoption, devices have a set of default credentials. 
 > - UniFi Consoles - `root` / `ubnt` or `root` / `ui`
