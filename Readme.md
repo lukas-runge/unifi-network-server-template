@@ -7,9 +7,20 @@
 git clone git@github.com:lukas-runge/unifi-network-server-template.git
 ```
 
-### 2. add `.env` file with strong mongo pw
+### 2. run `./setup.sh` or manually populate `.env` file with password and ids
+> [!TIP]
+> **If** you are on `macOS` or `Linux` you can run the includes `setup.sh` script to initialize the `.env` file. ✅
+>
+> **Else** you need to do it manually. Here are some helpful commands to make your life easier: 🙌
+> - generate random secure password: `docker run --rm ghcr.io/komed-health/pwgen`
+> - find user id: `id -u`
+> - find group id: `id -g`
+>
+
 ```
-MONGO_PASS=my-very-strong-password
+MONGO_PASS=<my-very-strong-password>
+UNA_UID=<your-user-id>
+UNA_GID=<your-group-id>
 ```
 
 ### 3. run detached
