@@ -1,0 +1,5 @@
+.env
+network-application/*
+db/*
+
+!db/init-mongo.js
